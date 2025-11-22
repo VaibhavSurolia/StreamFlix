@@ -1,0 +1,131 @@
+.profile-selection-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--bg-dark);
+  padding: 2rem;
+}
+
+.profile-selection-container {
+  text-align: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.profile-selection-container h1 {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin-bottom: 3rem;
+  color: var(--text-primary);
+}
+
+.profiles-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 2rem;
+  margin-bottom: 3rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile-card {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  text-align: center;
+}
+
+.profile-card:hover {
+  transform: scale(1.1);
+}
+
+.profile-avatar {
+  width: 120px;
+  height: 120px;
+  border-radius: 8px;
+  background: var(--bg-card);
+  border: 3px solid transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 4rem;
+  margin: 0 auto 1rem;
+  transition: var(--transition);
+}
+
+.profile-card:hover .profile-avatar {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 4px rgba(229, 9, 20, 0.2);
+}
+
+.profile-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 0.5rem;
+}
+
+.profile-card:hover h3 {
+  color: var(--text-primary);
+}
+
+.add-profile .profile-avatar {
+  background: var(--bg-darker);
+  border: 2px dashed var(--border-color);
+  font-size: 3rem;
+  color: var(--text-secondary);
+}
+
+.add-profile:hover .profile-avatar {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+.kids-badge {
+  display: inline-block;
+  padding: 0.25rem 0.75rem;
+  background: rgba(34, 197, 94, 0.2);
+  color: #22c55e;
+  border-radius: 12px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.manage-profiles-btn {
+  padding: 0.75rem 2rem;
+  background: transparent;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  color: var(--text-secondary);
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+.manage-profiles-btn:hover {
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+}
+
+@media (max-width: 768px) {
+  .profile-selection-container h1 {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+  }
+
+  .profiles-grid {
+    grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+    gap: 1.5rem;
+  }
+
+  .profile-avatar {
+    width: 100px;
+    height: 100px;
+    font-size: 3rem;
+  }
+}
+

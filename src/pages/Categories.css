@@ -1,0 +1,45 @@
+.categories-page {
+  padding-top: 100px;
+  min-height: 100vh;
+}
+
+.categories-header {
+  text-align: center;
+  padding: 3rem 2rem 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.categories-header h1 {
+  font-size: 3rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, var(--primary-color) 0%, #ff6b6b 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.categories-header p {
+  font-size: 1.2rem;
+  color: var(--text-secondary);
+}
+
+.categories-content {
+  padding-bottom: 4rem;
+}
+
+@media (max-width: 768px) {
+  .categories-page {
+    padding-top: 80px;
+  }
+
+  .categories-header h1 {
+    font-size: 2rem;
+  }
+
+  .categories-header p {
+    font-size: 1rem;
+  }
+}
+

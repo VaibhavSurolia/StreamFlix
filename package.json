@@ -1,0 +1,51 @@
+{
+  "name": "netflix-streaming-platform",
+  "version": "1.0.0",
+  "description": "Modern Netflix-like streaming platform",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "server": "node server.js"
+  },
+  "dependencies": {
+    "@niledatabase/react": "^5.1.0",
+    "@niledatabase/server": "^5.1.0",
+    "@vercel/analytics": "^1.5.0",
+    "@vercel/postgres": "^0.5.1",
+    "@vercel/speed-insights": "^1.2.0",
+    "axios": "^1.6.2",
+    "bcrypt": "^6.0.0",
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "jsonwebtoken": "^9.0.2",
+    "pg": "^8.16.3",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.20.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "vite": "^5.0.8"
+  },
+  "main": "vite.config.js",
+  "directories": {
+    "lib": "lib"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VaibhavSurolia/StreamFlix.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/VaibhavSurolia/StreamFlix/issues"
+  },
+  "homepage": "https://github.com/VaibhavSurolia/StreamFlix#readme"
+}
